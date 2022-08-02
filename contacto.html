@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Nosotros</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="harry.css">
+    <link rel="icon" type="image/x-icon" href="sue100.png">
+
+	<script src="https://kit.fontawesome.com/1cc988821b.js" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script> <!-- carrusel -->
+	<script src="main.js"></script>
+</head>
+<body>
+	
+    <header>
+		<div class="cabecera">
+			<a href="responsive.html">
+				<img src="sue100.png" alt="Ir al inicio">
+			</a>
+			<h1>SUE Electronics & DIY</h1>
+		</div><!-- Acá cierra .cabecera -->
+		
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="fa-solid fa-bars"></span>
+				<img src="sue100.png" alt="Ir al inicio">
+			</a>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="index.html"><span class="fa-solid fa-house"></span>Inicio</a></li>
+				<li class="submenu">
+					<a href="#"><span class="fa-solid fa-briefcase"></span>Proyectos <span class="fa-solid fa-angle-down"></span></a>
+					<ul class="children">
+                        <li><a href="ver-proyectos.html">Ver proyectos <span class="icon-dot"></span></a></li>
+
+						<li><a href="#">Subir proyecto <span class="icon-dot"></span></a></li>
+						<li><a href="#">Favoritos <span class="icon-dot"></span></a></li>
+						<li><a href="#">Hacer Pedido <span class="icon-dot"></span></a></li>
+					</ul>
+				</li>	
+				<li class="submenu">
+					<a href="#"><span  class="fa-solid fa-magnifying-glass"></span>Buscar...<span class="fa-solid fa-angle-down"></span></a>
+					<ul class="children">
+						<li><a href="#">...Proyectos <span class="icon-dot"></span></a></li>
+						<li><a href="#">...Usuarios <span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><span  class="fa-solid fa-store"></span>Tienda <span class="fa-solid fa-angle-down"></span></a>
+					<ul class="children">
+						<li><a href="#">Carrito <span class="icon-dot"></span></a></li>
+					</ul>
+			</li>
+				<li><a href="nosotros.html"><span class="fa-solid fa-s"></span>Nosotros</a></li>
+				
+				
+				<li><a href="contacto.html"><span class="fa-solid fa-phone"></span>Contacto</a>
+					
+				
+				
+			</ul>
+		</nav>
+	</header>
+    
+    <div class="form-contact">
+        <div class="contact_title"><h1>Contact us!😎</h1></div>
+    <form class="contact" method="POST" data-netlify="true">
+        <p>
+          <label for="names">Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label for="email">Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label for="phone">Phone number: <input type="text" name="phone" /></label>
+        </p>
+       
+        <p>
+          <label for="message">Mesagge:</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </p>
+        <p>
+            <label for="upload">Upload proyect (8mb max):</label>
+            <input type="file" name="resume" />
+        </p>
+
+     <div data-netlify-recaptcha="true"></div>
+
+    
+        <p>
+      <button type="submit">Send</button>
+        </p>
+        </form>
+  </div>
+    
+</body>
+</html>
